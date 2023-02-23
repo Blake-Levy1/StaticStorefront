@@ -17,7 +17,7 @@ h1 {
   font-size: 50px;
   width: 400px;
   position: relative;
-  left: 100px;
+  left: 20vw;
   top: 10px;
   padding: 20px;
   border: solid 5px white;
@@ -37,8 +37,9 @@ header nav {
   display: inline;
   height: 1.5em;
   width: 450px;
-  background-color: rgba(48, 48, 48, 0.927);
+  background-color: rgba(48, 48, 48, 0.9);
   border-radius: 0 0 5px 5px;
+  z-index: 100;
 }
 
 nav ul {
@@ -61,15 +62,17 @@ nav ul li {
 nav ul li.cart a {
   text-decoration: none;
   color: white;
-  background-color: rgba(232, 229, 229, .2);
+  background-color: rgba(255, 250, 250, 0.2);
   padding: 3px;
-  border: 2px solid rgba(232, 229, 229, .5);
+  border: 2px solid rgba(232, 229, 229, 1);
   border-radius: 3px;
 }
 
 nav ul li.cart a:hover {
-  background-color: rgba(252,251,243,0.7);
+  background-color: rgba(252,251,243,1);
 }
+
+
 
 section#sidebar {
   position: relative;
@@ -80,6 +83,7 @@ section#sidebar {
   border-radius: 10px;
   float: right;
   margin: 45px 40px 0 5px;
+  right:5vw;
   box-shadow: 5px 5px 5px #777;
 }
 
@@ -102,12 +106,15 @@ section#sidebar a:hover {
 }
 
 section#main {
+  position: relative;
   background-color: rgba(43, 43, 45, 0.2);
   display: inline-block;
   margin: 20px;
   width: 900px;
   padding: 20px;
   border-radius: 30px;
+  left: 5vw;
+  box-shadow: 5px 5px 5px #777;
 }
 
 section#main div.panel {
@@ -138,4 +145,39 @@ section#main div.panel button a {
   font-size: 15px;
   color: white;
   text-decoration: none;
+}
+
+footer {
+  margin-top: 3em;
+  height: 5em;
+  width: 100vw;
+  background-color: rgba(48, 48, 48, 0.927);
+  text-align: center;
+}
+
+footer ul {
+  display: inline-block;
+  position: relative;
+  top: 1em;
+}
+
+footer ul li {
+  display: inline;
+  color: white;
+}
+
+footer ul li::before {
+  content: "| ";
+  padding-right: 0.7em;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer span {
+  position: relative;
+  top: 1em;
+  color: white;
 }
